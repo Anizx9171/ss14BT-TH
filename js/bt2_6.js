@@ -1,7 +1,8 @@
 let arr = prompt("Nhập")
-for (let i = 0;i<arr.length;i++){
-    if(arr[i] == "-"){
-        arr[i]= "_"
+let arrd = arr.split("")
+for (let i = 0;i<arrd.length;i++){
+    if(arrd[i] == "-"){
+        arrd[i]= "_"
     }
 }
-console.log(arr);
+console.log(arrd.join(""));
